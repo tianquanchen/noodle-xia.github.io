@@ -42,7 +42,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #008888">
+<div class="overlay" style="background: #696969">
 <!--天气开始-->
 <div id="tp-weather-widget"></div>
 <script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.thinkpage.cn/widget/chameleon.js"))</script>
@@ -134,7 +134,7 @@ tpwidget("show");</script>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #008888"></div>
+  	<div class="overlay js-overlay" style="background: #696969"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -251,6 +251,11 @@ tpwidget("show");</script>
 
       
 
+<div style="float: right;color: #E91E63">
+<span id="busuanzi_container_page_pv" style="display: none;">
+阅读次数 <span id="busuanzi_value_page_pv"></span>
+</span></div>
+
       
         
 <div class="share-btn share-icons tooltip-left">
@@ -348,20 +353,25 @@ tpwidget("show");</script>
     	<div class="footer-left">
     		&copy; 2017 noodle-xia
     	</div>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv" style="color: blue;"></span>次
+</span>
+<span id="busuanzi_container_site_uv">
+  访客数<span id="busuanzi_value_site_uv" style="color: blue;"></span>人次
+</span>
+
+
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten & noodle-xia
       	</div>
     </div>
   </div>
 </footer>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-<span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-<span id="busuanzi_container_site_uv">
-  访客数<span id="busuanzi_value_site_uv"></span>人次
-</span>
+
+
 
 
     </div>
@@ -402,6 +412,8 @@ MathJax.Hub.Queue(function() {
 
 <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
+
 
 
     
