@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="noodle-xia">
 <meta property="og:description" content="个人博客更新日志&amp;amp;也是使用hexo+github搭建个人博客遇到的一些问题及看法，同时在主题中添加了一些新东西。">
 <meta property="og:image" content="http://onh2yw93k.bkt.clouddn.com/tianqi.png">
-<meta property="og:updated_time" content="2017-03-31T07:52:12.335Z">
+<meta property="og:updated_time" content="2017-03-31T10:32:50.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建个人博客">
 <meta name="twitter:description" content="个人博客更新日志&amp;amp;也是使用hexo+github搭建个人博客遇到的一些问题及看法，同时在主题中添加了一些新东西。">
@@ -67,11 +67,11 @@ tpwidget("show");</script>
 </div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/" class="profilepic">
+		<a href="/blog" class="profilepic">
 			<img src="http://ww2.sinaimg.cn/small/bd61f63dtw1edqgmiinmaj208m08m75r.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">noodle-xia</a></h1>
+		  <h1 class="header-author"><a href="/blog">noodle-xia</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">这一身脆骨敲起来铮铮的响！！</p>
@@ -80,7 +80,7 @@ tpwidget("show");</script>
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/blog/blog">主页</a></li>
+				<li><a href="/blog/">主页</a></li>
 	        
 				<li><a href="/blog/archives">所有文章</a></li>
 	        
@@ -181,7 +181,7 @@ tpwidget("show");</script>
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/blog/blog">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/blog/">主页</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/blog/archives">所有文章</a></li>
 		        
@@ -228,7 +228,8 @@ tpwidget("show");</script>
 <h6 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h6><p>在你博客根目录下的<code>_config.yml</code>中<code>repository:</code>修改为<code>git@github.com</code>形式 如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:noodle-xia/blog</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p>在<code>branch:</code>中如果博客地址是<code>yourname.github.io</code>，分支名就是<code>master</code>使用另建的<code>Repositorie</code>就使用<code>gh-pages</code>。</p>
-<h5 id="博客中插入图片和音乐"><a href="#博客中插入图片和音乐" class="headerlink" title="博客中插入图片和音乐"></a>博客中插入图片和音乐</h5><p>（1）、放在<a href="https://portal.qiniu.com/signup/choice?code=3lglas6pgi2qa" target="_blank" rel="external">七牛</a>上，需要先注册，上传图片生成链接，直接在文章中使用链接即可。（推荐使用这种，还拥有10G的免费存储图片资源。）<br>（2）、放在本地文件<br>首先在<code>yourname.github.io</code>目录下确认 <code>_config.yml</code> 中有<code>post_asset_folder:true</code> 。<br>在博客根目录下执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">![图片描述](/文件夹名/你的图片名字.JPG)</div><div class="line">例如：</div><div class="line">![ ] (img/author.jpg)</div></pre></td></tr></table></figure></p>
+<h5 id="博客中插入图片和音乐"><a href="#博客中插入图片和音乐" class="headerlink" title="博客中插入图片和音乐"></a>博客中插入图片和音乐</h5><p>（1）、放在<a href="https://portal.qiniu.com/signup/choice?code=3lglas6pgi2qa" target="_blank" rel="external">七牛</a>上，需要先注册，上传图片生成链接，直接在文章中使用链接即可。（推荐使用这种，还拥有10G的免费存储图片资源。）<br>（2）、放在本地文件<br>首先在<code>yourname.github.io</code>目录下确认 <code>_config.yml</code> 中有<code>post_asset_folder:true</code> 。<br>在博客根目录下执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</div></pre></td></tr></table></figure></p>
+<p>然后再使用 hexo new ‘new’ 创建新博客的时候，会在source/_posts里面创建.md文件的同时生成一个相同的名字的文件夹。把该文章中需要使用的图片放在该文件夹下即可。在博客中使用的时候用以下方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">![图片描述](/文件夹名/你的图片名字.JPG)</div><div class="line">例如：</div><div class="line">![ ] (img/author.jpg)</div></pre></td></tr></table></figure></p>
 <p>（3）、插入音乐<br>可以使用网易云音乐，搜索你想要的歌曲，点击歌曲名字进入播放器页面，点击生成外链播放器；复制代码，直接粘贴到博文中即可，这样会显示一个网易的播放器。<br>（4）、引入左边栏的音乐播放器<br>我使用的是一款绚丽彩虹的音乐播放器插件——&gt;<a href="http://www.badapple.top/" target="_blank" rel="external">绚丽彩虹播放器</a>里面有相关使用教程。复制代码块添加到<code>themes\yilia\layout\_partial\left-col.ejs</code>文件最下面即可。效果来源于<a href="https://zhouwhao.github.io/" target="_blank" rel="external">demo</a>。</p>
 <h5 id="引入天气"><a href="#引入天气" class="headerlink" title="引入天气"></a>引入天气</h5><p>同样将以下代码块加入<code>themes\yilia\layout\_partial\left-col.ejs</code>的第一个div中即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;!--天气开始--&gt;</div><div class="line">&lt;div id=&quot;tp-weather-widget&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;script&gt;(function(T,h,i,n,k,P,a,g,e)&#123;g=function()&#123;P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset=&quot;utf-8&quot;;P.async=1;a.parentNode.insertBefore(P,a)&#125;;T[&quot;ThinkPageWeatherWidgetObject&quot;]=n;T[n]||(T[n]=function()&#123;(T[n].q=T[n].q||[]).push(arguments)&#125;);T[n].l=+new Date();if(T.attachEvent)&#123;T.attachEvent(&quot;onload&quot;,g)&#125;else&#123;T.addEventListener(&quot;load&quot;,g,false)&#125;&#125;(window,document,&quot;script&quot;,&quot;tpwidget&quot;,&quot;//widget.thinkpage.cn/widget/chameleon.js&quot;))&lt;/script&gt;</div><div class="line">&lt;script&gt;tpwidget(&quot;init&quot;, &#123;</div><div class="line">    &quot;flavor&quot;: &quot;slim&quot;,</div><div class="line">    &quot;location&quot;: &quot;WM6N2PM3WY2K&quot;,</div><div class="line">    &quot;geolocation&quot;: &quot;enabled&quot;,</div><div class="line">    &quot;language&quot;: &quot;zh-chs&quot;,</div><div class="line">    &quot;unit&quot;: &quot;c&quot;,</div><div class="line">    &quot;theme&quot;: &quot;chameleon&quot;,</div><div class="line">    &quot;container&quot;: &quot;tp-weather-widget&quot;,</div><div class="line">    &quot;bubble&quot;: &quot;enabled&quot;,</div><div class="line">    &quot;alarmType&quot;: &quot;badge&quot;,</div><div class="line">    &quot;color&quot;: &quot;#FFFFFF&quot;,</div><div class="line">    &quot;uid&quot;: &quot;U88B4B2797&quot;,</div><div class="line">    &quot;hash&quot;: &quot;c9d7cb43b80ffece52c9a1ebbfbca65f&quot;</div><div class="line">&#125;);</div><div class="line">tpwidget(&quot;show&quot;);&lt;/script&gt;</div><div class="line">&lt;!--天气结束--&gt;</div></pre></td></tr></table></figure></p>
 <p>效果如图：<br><img src="http://onh2yw93k.bkt.clouddn.com/tianqi.png" alt=""></p>
