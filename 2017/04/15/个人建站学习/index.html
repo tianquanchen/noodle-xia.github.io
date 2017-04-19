@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://onh2yw93k.bkt.clouddn.com/mobile1.jpg">
 <meta property="og:image" content="http://onh2yw93k.bkt.clouddn.com/mobile3.jpg">
 <meta property="og:image" content="http://onh2yw93k.bkt.clouddn.com/pcpage.png">
-<meta property="og:updated_time" content="2017-04-19T14:22:59.115Z">
+<meta property="og:updated_time" content="2017-04-19T14:31:38.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人建站学习">
 <meta name="twitter:description" content="总结整理自己过去一段时间所做的东西——用于记录、备忘和学习，也是个人建站历程，学习及注意到的一些东西。">
@@ -241,7 +241,7 @@ tpwidget("show");</script>
 </ul>
 <p>安装过程稍微有点繁琐，主要是等待时间有点久，也基本上参考腾讯云论坛发布的一些教程视频 <a href="http://bbs.qcloud.com/thread-25587-1-1.html" target="_blank" rel="external">Linux基础教程 wdcp篇</a>，上边实现的挂载分区也可参考这里面的视频，介绍的相对详细。</p>
 <h6 id="接下来是上传文件到Linux云服务器"><a href="#接下来是上传文件到Linux云服务器" class="headerlink" title="接下来是上传文件到Linux云服务器"></a>接下来是上传文件到Linux云服务器</h6><p>下载并安装软件<code>XfTP5</code>（百度搜索下载即可）实现本地文件的上传，把自己的主页和项目放到云服务器中，同时下载<code>Xshell</code>远程登录自己的云服务器（云主机）。在<code>Xshell</code>打开新建传输协议便会启动<code>XfTP5</code>，即可进行传输。如<img src="http://onh2yw93k.bkt.clouddn.com/xshell.gif" alt=""></p>
-<h6 id="然后遇到的问题是是修改默认主页"><a href="#然后遇到的问题是是修改默认主页" class="headerlink" title="然后遇到的问题是是修改默认主页"></a>然后遇到的问题是是修改默认主页</h6><p>做网站的可能都会发现，有的网站做出来之后，会默认带上后缀<code>index.html</code>。这样一来，网址看起来就不是那么美观，而且不利于以后的seo优化。（解决是将index.html删除（如果没有，就不用管））。<br>还有云服务器下的web项目一般默认先调用<code>index.php</code>、然后是<code>index.html</code>等index文件。想要先调用自己的<code>index.html</code>文件的话，我的做法是把<code>index.php</code>删掉就好了。。</p>
+<h6 id="然后遇到的问题是修改默认主页"><a href="#然后遇到的问题是修改默认主页" class="headerlink" title="然后遇到的问题是修改默认主页"></a>然后遇到的问题是修改默认主页</h6><p>做网站的可能都会发现，有的网站做出来之后，会默认带上后缀<code>index.html</code>。这样一来，网址看起来就不是那么美观，而且不利于以后的seo优化。（解决是将index.html删除（如果没有出现这种情况，就不用管））。<br>还有云服务器下的web项目一般默认先调用<code>index.php</code>、然后是<code>index.html</code>等index文件。想要先调用自己的<code>index.html</code>文件的话，我的做法是把<code>index.php</code>删掉就好了。。</p>
 <h5 id="个人主页（noodle-xia的小屋）"><a href="#个人主页（noodle-xia的小屋）" class="headerlink" title="个人主页（noodle-xia的小屋）"></a>个人主页（noodle-xia的小屋）</h5><h6 id="移动端与pc端采用不同页面"><a href="#移动端与pc端采用不同页面" class="headerlink" title="移动端与pc端采用不同页面"></a>移动端与pc端采用不同页面</h6><p>因为PC端主页若是在移动端加载需耗费不少流量（加载动画效果及音乐时），对于流量党体验很不好，并且之前我所参考的这个主页模板并没有做响应式布局这部分，考虑这一点便做了移动端的主页进行跳转。如何跳转? 只需要在要跳转的页面head标签里加上下面这句代码就可以了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;http://siteapp.baidu.com/static/webappservice/uaredirect.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    uaredirect(&quot;http://www.nooxia.cn/me.html&quot;);   //&quot;手机版页面网址&quot;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>或者是通过判断浏览器User-Agent为客户端发送不同的页面，实际上和以上方式差不多吧，都是用js方式实现重定向。</p>
 <h6 id="移动端主页"><a href="#移动端主页" class="headerlink" title="移动端主页"></a>移动端主页</h6><p><img src="http://onh2yw93k.bkt.clouddn.com/mobile1.jpg" alt=""> </p>
@@ -554,15 +554,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">demo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">建站</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
