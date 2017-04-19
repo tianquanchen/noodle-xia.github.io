@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title><![CDATA[个人建站学习]]></title>
+      <url>https:noodle-xia.github.io/2017/04/15/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99%E5%AD%A6%E4%B9%A0/</url>
+      <content type="html"><![CDATA[<p><img src="http://onh2yw93k.bkt.clouddn.com/make.jpg" alt=""><br>总结整理自己过去一段时间所做的东西——用于记录、备忘和学习，也是个人建站历程，学习及注意到的一些东西。<br><a id="more"></a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 个人网站 </category>
+            
+            <category> 随笔 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+            <tag> demo </tag>
+            
+            <tag> 建站 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vue-cli多页面脚手架]]></title>
       <url>https:noodle-xia.github.io/2017/03/20/My-New-Post/</url>
       <content type="html"><![CDATA[<p> 学习使用vue-cli多页面脚手架<br><a id="more"></a></p>
@@ -30,11 +57,11 @@
         
         <tags>
             
+            <tag> 随笔 </tag>
+            
             <tag> vue </tag>
             
             <tag> 前端框架 </tag>
-            
-            <tag> 随笔 </tag>
             
         </tags>
         
