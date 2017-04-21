@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="noodle-xia">
 <meta property="og:description" content="——温故而知新">
 <meta property="og:image" content="http://onh2yw93k.bkt.clouddn.com/cloud.gif">
-<meta property="og:updated_time" content="2017-04-21T05:59:50.957Z">
+<meta property="og:updated_time" content="2017-04-21T10:25:10.161Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas效果及响应式布局加深理解">
 <meta name="twitter:description" content="——温故而知新">
@@ -226,7 +226,13 @@ tpwidget("show");</script>
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://onh2yw93k.bkt.clouddn.com/cloud.gif" alt=""><br>——温故而知新<br><a id="more"></a></p>
-
+<h5 id="温故"><a href="#温故" class="headerlink" title="温故"></a>温故</h5><p><code>&lt;canvas&gt;&lt;/canvas&gt;</code>标签像所有的dom对象一样它有自己本身的属性、方法和事件，其中就有绘图的方法，js能够调用它来进行绘图。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var context =canvas.getContext(&quot;2d&quot;);</div></pre></td></tr></table></figure></p>
+<p>代码中<code>context</code>是一个封装了很多绘图功能的对象，2d则是提供2d动画效果，同样使用<code>webgl</code>可以实现<code>3d</code>效果。<br>canvas元素绘制图像的时候常用两种基本方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">context.fill()//填充</div><div class="line">context.stroke()//绘制边框</div></pre></td></tr></table></figure></p>
+<p>颜色的应用使用十六进制颜色值<code>#fff</code>等，也可直接使用颜色名称，还有<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rgb(1-255,1-255,1-255)</div><div class="line">rgba(1-255,1-255,1-255,0.1-0.9 //透明度)</div></pre></td></tr></table></figure></p>
+<p>在我设置移动端导航页面应用到。</p>
+<h6 id="使用-HTML5-Canvas标签-画一个简单的时钟"><a href="#使用-HTML5-Canvas标签-画一个简单的时钟" class="headerlink" title="使用 HTML5 Canvas标签 画一个简单的时钟"></a>使用 HTML5 Canvas标签 画一个简单的时钟</h6><p>几个月之前开始学习时，学着画一个简单的时钟来练手，利用<code>canvas</code>使用<code>JavaScript</code>在网页上绘制图像，先构造一个画布，画布是一个矩形区域，可以控制其每一像素。代码和<code>demo</code>上传在前端小屋的笔记，可进行效果预览 <a href="http://www.qdfuns.com/notes/42658/81fd0ba1c33652b5ecaa45faa21570de.html" target="_blank" rel="external">使用 HTML5 Canvas标签 画一个简单的时钟</a></p>
+<h6 id="Canvas为网页添加动态背景"><a href="#Canvas为网页添加动态背景" class="headerlink" title="Canvas为网页添加动态背景"></a>Canvas为网页添加动态背景</h6><p>我的移动端主页参考：</p>
+<h5 id="知新"><a href="#知新" class="headerlink" title="知新"></a>知新</h5>
       
 
       
@@ -264,11 +270,11 @@ tpwidget("show");</script>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">canvas</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">demo</a>
         		</li>
       		
 		</ul>
@@ -518,11 +524,11 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">前端框架</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+                <a href="javascript:void(0)" class="js-tag color5">前端框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -530,7 +536,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -542,7 +548,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">canvas</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
