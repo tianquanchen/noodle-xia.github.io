@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title><![CDATA[canvas效果及响应式布局加深理解]]></title>
+      <url>https:noodle-xia.github.io/2017/04/20/canvas%E6%95%88%E6%9E%9C%E5%8F%8A%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/</url>
+      <content type="html"><![CDATA[<p><img src="http://onh2yw93k.bkt.clouddn.com/cloud.gif" alt=""><br>——温故而知新<br><a id="more"></a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 响应式 </category>
+            
+            <category> 随笔 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+            <tag> demo </tag>
+            
+            <tag> canvas </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[个人建站学习]]></title>
       <url>https:noodle-xia.github.io/2017/04/15/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99%E5%AD%A6%E4%B9%A0/</url>
       <content type="html"><![CDATA[<p><img src="http://onh2yw93k.bkt.clouddn.com/make.jpg" alt=""><br>总结整理自己过去一段时间所做的东西——用于记录、备忘和学习，也是个人建站历程，学习及注意到的一些东西。<br><a id="more"></a></p>
@@ -76,9 +103,9 @@
         
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> 前端框架 </tag>
+            
+            <tag> vue </tag>
             
             <tag> 随笔 </tag>
             
@@ -102,9 +129,9 @@
         
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> 前端框架 </tag>
+            
+            <tag> vue </tag>
             
         </tags>
         
@@ -125,9 +152,9 @@
         
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> 前端框架 </tag>
+            
+            <tag> vue </tag>
             
         </tags>
         
